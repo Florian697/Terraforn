@@ -1,0 +1,10 @@
+#cloud-config
+users:
+ - default
+ - name: ansible
+   groups: sudo
+   password: test
+   shell: /bin/bash
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+   ssh-authorized-keys:
+        - ssh-rsa #
